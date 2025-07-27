@@ -1,0 +1,41 @@
+{
+  "name": "zoho-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build && rmdir /s /q app && move build app",
+    "validate": "zet validate",
+    "pack": "zet pack"
+  },
+  "homepage": "./",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "chalk": "^1.1.3",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "i18next": "^10.0.7",
+    "morgan": "^1.6.1",
+    "portfinder": "^1.0.25",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "react-scripts": "^5.0.1",
+    "serve-index": "^1.9.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
